@@ -1,25 +1,13 @@
-[![Release](https://github.com/Slenderman00/revanced-patches-grindr/actions/workflows/release.yml/badge.svg)](https://github.com/Slenderman00/revanced-patches-grindr/actions/workflows/release.yml)
+# ReVanced Signature Patch Grindr
 
-# 🤙 ReVanced Patches for Grindr
-This patch unlocks "Unlimited" functionality in the Grindr application.
+Fork of [Joar](https://github.com/Slenderman00)'s patch. The general idea is to make it compatible with any version of Grindr,
+such that it can be used in https://github.com/isaackogan/Grindr-SSL-Unpinned to automatically unpin new versions of the app on the fly.
 
 # Usage 
-To use this project:
-Make ```Slenderman00``` the patches organization for your revanced app and make ```revanced-patches-grindr``` the Source
 
-![image](https://i.imgur.com/f9Y9S4l.png)
----
+To use this project, run `./gradlew build`. The output in the `/build/libs` directory can be used as a multi-platform JAR to patch (ideally) any recent version of the Grindr app.
 
-## Acknowledgements
+# wyd?
 
- - [Grindr Plus](https://github.com/ElJaviLuki/GrindrPlus)
-
-## Contact
-- You can find me on [this discord server](https://discord.gg/SPb6Kc7S4C)
-- Other contact information can be found on my website [joar.me](https://joar.me)
-## Contributing
-
-Contributions are always welcome!
-
-We are currently looking for someone to write the `contributing.md` and the `code of conduct`.
+nm jc
 
