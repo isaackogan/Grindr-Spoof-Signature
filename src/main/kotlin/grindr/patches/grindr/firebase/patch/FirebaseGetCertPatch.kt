@@ -4,10 +4,19 @@ import app.revanced.patcher.data.BytecodeContext
 import app.revanced.patcher.extensions.InstructionExtensions.addInstructions
 import app.revanced.patcher.patch.BytecodePatch
 import app.revanced.patcher.patch.PatchResult
+import app.revanced.patcher.patch.annotation.CompatiblePackage
+import app.revanced.patcher.patch.annotation.Patch
 import app.revanced.patches.grindr.firebase.fingerprints.GetMessagingCertFingerprint
 import app.revanced.patches.grindr.firebase.fingerprints.GetRegistrationCertFingerprint
 import app.revanced.patches.grindr.Constants.SPOOFED_PACKAGE_SIGNATURE
 
+@Patch(
+    name = "Remove Signature Validation",
+    description = "Remove signature validation from the app",
+    compatiblePackages = [
+        CompatiblePackage("com.grindrapp.android"),
+    ],
+)
 class FirebaseGetCertPatchGrindr : BytecodePatch(
     setOf(
         GetRegistrationCertFingerprint,
